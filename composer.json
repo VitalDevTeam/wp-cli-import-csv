@@ -1,0 +1,19 @@
+{
+    "name": "wp-cli/importcsv",
+    "description": "Flexible importing of content from CSV formatted files to WordPress",
+    "type": "wp-cli-package",
+    "homepage": "https://github.com/VitalDevTeam/wp-cli-import-csv",
+    "license": "MIT",
+    "authors": [
+        {
+                "name": "Jeff Sebring",
+                "homepage": "https://github.com/jeffsebring/wp-cli-import-csv/"
+            }
+        ],
+    "require": {
+        "php": ">=5.3.29"
+    },
+    "autoload": {
+        "files": [ "importcsv.php" ]
+    }
+}

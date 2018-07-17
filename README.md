@@ -5,8 +5,19 @@ WP CLI Import CSV
 
 **Back up your database.**
 
-`importcsv` Subcommands
------------------------
+## Installation
+Install to WP-CLI using this command:
+
+`wp package install https://github.com/VitalDevTeam/wp-cli-import-csv`
+
+### Installation Note
+If installation silently fails during the _"Updating dependencies"_ stage, you are probably getting an _"Allowed memory size exhausted"_ error in your PHP log. To fix, you need to increase PHP's memory limit:
+
+1. Find active php.ini file: `php -i | grep php.ini`
+2. Edit file and increase `memory_limit` to `512M`
+3. Restart Apache
+
+## `importcsv` Subcommands
 
 There are 2 subcommands included to check the validity of your arguments, and file header settings. `write` is the only subcommand which will write to the database. The terminal output allows you to review data mapping what will be imported before asking for confirmation of database write.
 
